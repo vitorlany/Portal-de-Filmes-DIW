@@ -1,0 +1,26 @@
+.logo img {
+    width: 100px;
+}
+
+.nav-pesquisa {
+    margin: auto 0 auto;
+}
+
+.nav {
+    margin: auto 0 auto;
+}
+
+.lancamentos {
+    margin-top: 50px;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.video img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
