@@ -6,6 +6,18 @@
     margin: auto 0 auto;
 }
 
+.header {
+    background-color: rgb(148, 148, 148);
+}
+
+.nav li a {
+    color: rgb(247, 247, 247);
+}
+
+.nav li a:hover {
+    color: rgb(255, 0, 0);
+}
+
 .nav {
     margin: auto 0 auto;
 }
@@ -30,20 +42,10 @@
 }
 
 .destaques-cards {
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 25px;
+    max-width: 1400px;
 }
 
-.card-filme {
-    display: flex;
-    height: 300px;
-    width: 220px;
+.card-opt {
     margin-bottom: 25px;
-}
-
-.card-filme img {
-    width: 100%;
-    border-radius: 5px;
 }
