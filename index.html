@@ -5,115 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/8dff099baa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Portal de filmes - DIW</title>
+    <title>Document</title>
 </head>
 <body>
-    <header class="container header">
+    <header class="container nav-fundo">
         <div class="row">
-            <div class="col-2 logo">
-                <img src="imgs/logo.png" alt="Logo do site">
+            <div class="col-4 logo">
+                <a href="#">
+                    <img src="imgs/logo.png" alt="">
+                </a>
             </div>
-            <div class="col-7 nav">
-                <ul class="nav">
+            <div class="col-8 nav-bar">
+                <ul class="nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Lançamentos</a>
+                      <a class="nav-link" href="#">Lançamentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Em destaque</a>
+                      <a class="nav-link" href="#">Destaque</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Avaliações</a>
+                      <a class="nav-link" href="#">Avalições</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Entrevista & makingof</a>
+                      <a class="nav-link" href="#">Entrevista & Makingof</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Novidades</a>
+                      <a class="nav-link" href="#">Novidades</a>
                     </li>
                 </ul>
-            </div>
-            <div class="col-3 nav-pesquisa">
-                <div class="input-group rounded">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="lancamentos">
-            <h2 class="titulo">Lançamentos</h2>
-            <div class="row">
-                <div class="col-12 col-lg-6 video">
-                    <!--Apenas de texte, substituir pelo iframe-->
-                    <img src="https://source.unsplash.com/random/500x300" alt="Video">
-                </div>
-                <div class="col-12 col-lg-6">
-                    <h3>Nome do filme</h3>
-                    <p><strong>Sinopse:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam laboriosam enim dicta debitis a doloremque veniam impedit repellat itaque. Ut vel sunt aliquid exercitationem reiciendis sint natus dolor, possimus quaerat laborum, perspiciatis officiis quis! Cumque dignissimos ipsa explicabo alias recusandae, magnam repellat eaque corrupti, aspernatur similique a debitis eum.</p>
-
-                    <div>
-                        <label><strong>Diretor: </strong>Carlos</label>
-                        <label><strong>Roteiro: </strong>Emanuel</label>
-                        <label><strong>Estreia: </strong>2022</label>
+    <main>
+        <div class="container lancamentos">
+            <h2 style="text-align: center; margin-bottom: 25px;">Lançamentos</h2>
+            <div class="row lancamentos-fundo col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="sessao">
+                            <div class="col-6">
+                                <iframe src="https://www.youtube.com/embed/dCVgcKAJtW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-6">
+                                
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="sessao">
 
-                    <p><strong>Elenco</strong></p>
-                    <label>Fernanda | Claudio | Lucas | Maria</label>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="sessao">
 
-                    <p>Avalição</p>
-                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
-
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </section>
-
-        <section class="container destaques">
-            <h2>Em Destaque</h2>
-            <div class="row destaques-cards">
-                <div class="card card-opt" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/filme-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">Nome do filme</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic assumenda quo deleniti quos perspiciatis enim tempore odio mollitia quisquam.</p>
-                    </div>
-                </div>
-
-                <div class="card card-opt" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/filme-2.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">Nome do filme</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic assumenda quo deleniti quos perspiciatis enim tempore odio mollitia quisquam.</p>
-                    </div>
-                </div>
-
-                <div class="card card-opt" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/filme-3.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">Nome do filme</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic assumenda quo deleniti quos perspiciatis enim tempore odio mollitia quisquam.</p>
-                    </div>
-                </div>
-
-                <div class="card card-opt" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/filme-4.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">Nome do filme</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus hic assumenda quo deleniti quos perspiciatis enim tempore odio mollitia quisquam.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

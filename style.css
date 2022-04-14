@@ -1,51 +1,45 @@
 .logo img {
-    width: 100px;
+    width: 100%;
+    max-width: 150px;
 }
 
-.nav-pesquisa {
-    margin: auto 0 auto;
+.nav-bar {
+    font-size: x-large;
+    margin: auto;
 }
 
-.header {
-    background-color: rgb(148, 148, 148);
+.nav-bar a {
+    color: red;
 }
 
-.nav li a {
-    color: rgb(247, 247, 247);
+.nav-bar a:hover {
+    color: rgb(202, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(156, 156, 156);
 }
 
-.nav li a:hover {
-    color: rgb(255, 0, 0);
+.nav-fundo {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 0  10px 10px;
 }
 
-.nav {
-    margin: auto 0 auto;
+.lancamentos-fundo {
+    margin: 0 auto;
 }
 
 .lancamentos {
     margin-top: 50px;
 }
 
-.titulo {
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.video img{
+.sessao {
     width: 100%;
-    display: block;
-    margin: 0 auto;
+    height: 500px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 10px;
 }
 
-.destaques {
-    margin-top: 50px;
-}
-
-.destaques-cards {
-    justify-content: space-between;
-    max-width: 1400px;
-}
-
-.card-opt {
-    margin-bottom: 25px;
+iframe {
+    width: 894px; 
+    height: 503px;
+    max-width: 100%;
 }
