@@ -6,6 +6,11 @@
     text-align: center;
 }
 
+.carousel {
+    background-color: rgb(223, 223, 223);
+    padding: 25px;
+}
+
 .carousel-item {
     width: 100%;
     height: 500px;
@@ -14,7 +19,6 @@
 .carousel-conteudo {
     max-width: 1200px;
     height: 100%;
-    background-color: rgb(187, 187, 187);
     margin: 0 auto;
 }
 
@@ -28,4 +32,5 @@
 
 iframe {
     width: 100%;
+    border-radius: 10px;
 }
