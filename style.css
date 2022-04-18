@@ -34,3 +34,20 @@ iframe {
     width: 100%;
     border-radius: 10px;
 }
+
+.filme-destaque {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-destaque {
+    max-width: 400px;
+    background-color: black;
+    margin: 5px;
+}
+
+.card-destaque img {
+    display: block;
+    width: 100%;
+}
+
