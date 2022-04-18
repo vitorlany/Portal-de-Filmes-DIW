@@ -1,95 +1,31 @@
-body {
-    background-color: #2c3e50;
+.espacamento {
+    margin-bottom: 70px;
 }
 
-.logo img {
+.titulo-centro {
+    text-align: center;
+}
+
+.carousel-item {
     width: 100%;
-    max-width: 150px;
+    height: 500px;
 }
 
-.nav-bar {
-    font-size: x-large;
-    margin: auto;
-}
-
-.nav-bar a {
-    color: rgb(29, 29, 29);
-}
-
-.nav-bar a:hover {
-    color: rgb(145, 145, 145);
-    border-radius: 10px;
-}
-
-h2 {
-    color: white;
-}
-
-.nav-fundo {
-    background-color: rgb(206, 206, 206);
-    border-radius: 0px 0  10px 10px;
-}
-
-.lancamentos-fundo {
+.carousel-conteudo {
+    max-width: 1200px;
+    height: 100%;
+    background-color: rgb(187, 187, 187);
     margin: 0 auto;
 }
 
-.lancamentos {
-    margin-top: 50px;
-}
 
-.sessao {
-    width: 100%;
-    height: 500px;
-    background-color: rgb(175, 175, 175);
-    border-radius: 10px;
-}
+/* @media screen and (max-width: 576px){
+    .carousel-item {
+        width: 100%;
+        height: 250px;
+    }
+}*/
 
 iframe {
-    width: 894px; 
-    height: 503px;
-    max-width: 100%;
-}
-
-.em-destaque {
-    margin-top: 50px;
-}
-
-.card-ordem {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.card {
-    max-width: 350px;
-    margin-bottom: 25px;
-    background-color: rgb(109, 109, 109);
-    color: rgb(209, 209, 209);
-}
-
-@media screen and (max-width: 780px) and (min-width: 1199px) {
-    .card {
-        max-width: 900px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .card {
-        max-width: 450px;
-    }
-}
-
-.alinhar-direita {
-    display: flex;
-    justify-content: right;
-}
-
-.in-line {
-    display: inline-block;
-}
-
-.top-destaque {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 }
