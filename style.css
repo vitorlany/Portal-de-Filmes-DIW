@@ -35,15 +35,21 @@ iframe {
     border-radius: 10px;
 }
 
+.em-destaque {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .filme-destaque {
     display: flex;
     flex-wrap: wrap;
 }
 
 .card-destaque {
-    max-width: 400px;
+    max-width: 300px;
     background-color: black;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .card-destaque img {
