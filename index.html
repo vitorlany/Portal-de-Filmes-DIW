@@ -12,6 +12,9 @@
   <title>Portal de filmes</title>
 </head>
 
+
+<!-- Me ajuda, que eu te ajudo amigo  -->
+
 <body>
   <header class="espacamento">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -43,7 +46,7 @@
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
           </form>
         </div>
       </div>
@@ -149,7 +152,7 @@
                       title="YouTube video player" frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen></iframe>
-                  </div> 
+                  </div>
                   <div class="col-12 col-md-6">
                     <h2>Minari: Em Busca da Felicidade</h2>
                     <p><strong>Sinopsse:</strong> Uma família coreano-americana se muda para uma fazenda no Arkansas em
@@ -185,7 +188,18 @@
     <div class="em-destaque">
       <div class="titulo-categoria">
         <h2>Em Destaque</h2>
-        
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categoria
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Categoria: Todos</a>
+            <a class="dropdown-item" href="#">Aventura</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Comédia</a>
+          </div>
+        </div>
       </div>
       <div class="container">
         <div class="row">
@@ -213,9 +227,199 @@
           </div>
         </div>
       </div>
+      <button type="button" class="btn btn-secondary carregar-mais"><i class="fa-solid fa-plus"></i> Carregar
+        mais</button>
+    </div>
+
+    <div class="avaliacoes">
+      <div class="titulo-categoria">
+        <h2>Últimas Avaliações</h2>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Categoria
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Categoria: Todos</a>
+            <a class="dropdown-item" href="#">Aventura</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Comédia</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row avaliacao-grupo-cards">
+          <div class="col-12 col-md-6 col-lg-4 cad-avaliacao">
+            <div class="foto-perfil">
+              <img src="imgs/pessoa/1.png" alt="">
+            </div>
+            <h3 class="titulo-centro">Matheus da Silva</h3>
+            <p class="titulo-centro"><strong>Avaliação:</strong> Assisti aos filmes recomendados pela plataforma e simplesmente adorei todos, principalmente o Minari. 10/04/2022</p>
+            <p class="titulo-centro">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 cad-avaliacao">
+            <div class="foto-perfil">
+              <img src="imgs/pessoa/2.png" alt="">
+            </div>
+            <h3 class="titulo-centro">Henrique Diniz</h3>
+            <p class="titulo-centro"><strong>Avaliação:</strong> Assiti ao filme Judas e o Messias Negro achei bem interessante, mas acho que poderia ser melhor 15/04/2022</p>
+            <p class="titulo-centro">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 cad-avaliacao">
+            <div class="foto-perfil">
+              <img src="imgs/pessoa/3.png" alt="">
+            </div>
+            <h3 class="titulo-centro">Gustavo</h3>
+            <p class="titulo-centro"><strong>Avaliação:</strong> Meu pai, quase perfeito se não fosse o final, deixou a desejar, espero por uma continuação. 10/04/2022</p>
+            <p class="titulo-centro">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary carregar-mais"><i class="fa-solid fa-plus"></i> Carregar
+        mais</button>
+    </div>
+
+    <div class="entrevistas-makingof">
+      <div class="entrevistas-makingof-dentro">
+        <h2>Entrevistas & Making of</h2>
+        <div class="container">
+          <div class="row making-of-group-card">
+            <div class="col-12 col-md-6 col-lg-4 making-of-card">
+              <div class="making-of-video">
+                <iframe src="https://www.youtube.com/embed/wy34U3AG1rw" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <h3>Judas e o Messias Negro</h3>
+                <p><span><strong>Diretor: </strong>Shaka King</span>
+                  <span><strong>Roteiro: </strong>Will Berson</span>
+                  <span><strong>Estreia: </strong>2020</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 making-of-card">
+              <div class="making-of-video">
+                <iframe src="https://www.youtube.com/embed/wakX8dpH8A8" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <h3>Meu pai</h3>
+                <p><span><strong>Diretor: </strong>Florian Zeller</span>
+                  <span><strong>Roteiro: </strong>Christopher Hampton</span>
+                  <span><strong>Estreia: </strong>2020</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 making-of-card">
+              <div class="making-of-video">
+                <iframe src="https://www.youtube.com/embed/mQFC-VdgkUk" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <h3>Minari</h3>
+                <p><span><strong>Diretor: </strong>Lee Isaac Chung</span>
+                  <span><strong>Roteiro: </strong>Lee Isaac Chung</span>
+                  <span><strong>Estreia: </strong>2020</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-secondary carregar-mais"><i class="fa-solid fa-plus"></i> Carregar
+          mais</button>
+      </div>
+    </div>
+
+    <div class="novidades-sobre">
+      <div class="container">
+        <div class="row">
+          <h2>Novidades</h2>
+          <div class="novidades col-12 col-lg-8">
+
+            <div class="col-12 novidades-card">
+              <div class="col-12 col-md-4 novidades-dentro">
+                <img src="imgs/filme-judas/noticia.webp" alt="">
+              </div>
+              <div class="col-12 col-md-8 novidades-dentro">
+                <h3>Judas e o Messias Negro</h3>
+                <p>Filme produzido pelo diretor de 'Pantera Negra' impressiona pela ótima direção de Shaka King e pela
+                  trilha sonora. Daniel Kaluuya, de 'Corra!', é o destaque do elenco como Fred Hampton.</p>
+                <span>Filmes</span>
+                <span>Oscar</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="col-12 novidades-card">
+              <div class="col-12 col-md-4 novidades-dentro">
+                <img src="imgs/filme-meuPai/noticia.webp" alt="">
+              </div>
+              <div class="col-12 col-md-8 novidades-dentro">
+                <h3>Meu pai</h3>
+                <p>Filme indicado a seis prêmios no Oscar é estreia do diretor de teatro Florian Zeller no cinema. Ator
+                  vive um homem com Alzheimer e tem Olivia Colman como ótima parceira de cena.</p>
+                <span>Filmes</span>
+                <span>Oscar</span>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="col-12 novidades-card">
+              <div class="col-12 col-md-4 novidades-dentro">
+                <img src="imgs/filme-minari/noticia.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-8 novidades-dentro">
+                <h3>Minari: Em Busca da Felicidade</h3>
+                <p>Além de ter sido indicado em diversas categorias no Oscar 2021 — incluindo Melhor Filme — Minari traz
+                  um elenco asiático fenomenal que promete roubar a cena na cerimônia deste ano.</p>
+                <span>Filmes</span>
+                <span>Oscar</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="sobre col-12 col-lg-4">
+            <h3>Sobre</h3>
+            <p>Site sobre tudo do universo dos filmes, de oscar, até recomendações.</p>
+
+            <h3>Editorial</h3>
+            <p><i class="fa-solid fa-user"></i> João Pedro</p>
+            <p><i class="fa-solid fa-user"></i> Lucas da Silva</p>
+            <p><i class="fa-solid fa-user"></i> Vitor Ferreira</p>
+
+            <h3>Redes sociais</h3>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 
+  <footer>
+    <div class="footer-conteudo">
+      <h4>Copyright (c) 2022 Vitão Softwares</h4>
+      <h5>MAIS+ FILMES</h1>
+    </div>
+  </footer>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

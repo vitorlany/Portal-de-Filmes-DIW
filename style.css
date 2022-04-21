@@ -13,7 +13,6 @@
 
 .carousel-item {
     width: 100%;
-    height: 500px;
 }
 
 .carousel-conteudo {
@@ -37,7 +36,7 @@ iframe {
 
 .em-destaque {
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 .filme-destaque {
@@ -49,7 +48,7 @@ iframe {
     max-width: 300px;
     background-color: black;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .card-destaque img {
@@ -57,3 +56,139 @@ iframe {
     width: 100%;
 }
 
+.titulo-categoria {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-categoria h2 {
+    display: inline-block;
+}
+
+.titulo-categoria div {
+    display: inline-block;
+}
+
+.avaliacao-grupo-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.avaliacoes {
+    max-width: 1400px;
+    margin: 0 auto 70px;
+}
+
+.cad-avaliacao {
+    max-width: 300px;
+    height: 340px;
+    margin: 25px auto 0px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 10px;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.foto-perfil img {
+    width: 100%;
+}
+
+.nome-avaliador {
+    text-align: center;
+}
+
+.entrevistas-makingof {
+    background-color: rgb(187, 187, 187);
+}
+
+.entrevistas-makingof-dentro {
+    max-width: 1400px;
+    padding: 10px;
+    margin: 0 auto 70px;
+}
+
+.making-of-group-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.making-of-card {
+    margin: 25px auto;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.making-of-video iframe {
+    margin-top: 10px;
+}
+
+.carregar-mais {
+    display: block;
+    margin: 10px 0 0 auto;
+}
+
+.novidades-sobre {
+    max-width: 1400px;
+    margin: 0 auto 50px;
+}
+
+.novidades-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.novidades-card img {
+    padding: 10px;
+    max-width: 100%;
+}
+
+.novidades-dentro {
+    display: inline-block;
+}
+
+.novidades-dentro span {
+    padding: 5px;
+    color: white;
+    background-color: rgb(92, 92, 92);
+    border-radius: 20px;
+}
+
+.sobre a {
+    color: black;
+}
+.fa-brands {
+    font-size: xx-large;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(182, 182, 182);
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(228, 228, 228);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-conteudo h4 {
+    display: inline-block;
+}
+
+.footer-conteudo h5 {
+    display: inline-block;
+}
