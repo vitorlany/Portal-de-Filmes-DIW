@@ -28,7 +28,7 @@ function construindoDestaques(data) {
         let filme = listaFilmes[i]
         destaquesID.innerHTML += `
         <div class="col-12 col-md-6 card-destaque">
-            <a href="#">
+            <a href="/detalhes.html?id=${i}">
                 <img src="https://image.tmdb.org/t/p/original/${filme.poster_path}" alt="${filme.title}">
             </a>
         </div>
