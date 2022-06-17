@@ -35,3 +35,41 @@ function construindoDestaques(data) {
         `
     }
 }
+
+porVim()
+function porVim() {
+    var upcoming = `https://api.themoviedb.org/3/movie/upcoming?api_key=${api_key}&language=pt-BR`
+    let request = new XMLHttpRequest()
+    request.open("GET", upcoming, true)
+    request.onload = () => {
+        let lancando = JSON.parse(request.response).results
+        let aleatorio = Math.floor(Math.random() * (20 - 0 + 1) + 0)
+        let filme = lancando[aleatorio]
+        let porVimID = document.getElementById("porvim")
+        porVimID.innerHTML += `
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 imagem-Porvim">
+                    <img src="https://image.tmdb.org/t/p/original/${filme.poster_path}" alt="Sem foto">
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3>${filme.title}</h3>
+                    <p><span><strong>Lançamento: </strong>${filme.release_date}</span></p>
+                    <p><strong>Sinopsse: </strong>${filme.overview}</p>
+
+                    <p>
+                    <h6><strong>Elenco</strong></h6>
+                    Anthony Hopkins | Olivia Colman | Imogen Poots
+                    </p>
+
+                    <p>
+                    <h6><strong>Avaliação</strong></h6>
+                    <span><i class="fa-solid fa-star"></i>${filme.vote_average} de ${filme.vote_count} votos</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    `
+    }
+    request.send()
+}

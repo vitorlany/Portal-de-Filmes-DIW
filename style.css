@@ -21,6 +21,9 @@
     margin: 0 auto;
 }
 
+#porvim h2{
+    text-align: center;
+}
 
 /* @media screen and (max-width: 576px){
     .carousel-item {
@@ -29,9 +32,11 @@
     }
 }*/
 
-iframe {
-    width: 100%;
-    border-radius: 10px;
+.imagem-Porvim img {
+    display: block;
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
 }
 
 .em-destaque {
