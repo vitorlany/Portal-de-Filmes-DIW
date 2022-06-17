@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Document</title>
+
+    <style>
+        .resultadoPesquisa {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .cardPesquisa {
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .cardPesquisaImagem {
+            width: 250px;
+        }
+
+        .cardPesquisaImagem img {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div id="resultadoPesquisa">
 
-    <h2>Pagina de pesquisa</h2>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const api_key = '48117ef2f2ff8afded54743bb48a5315'
+        var search = new URLSearchParams(location.search)
+        var id = search.get("id")
+
+        let divPesquisa = document.getElementById("resultadoPesquisa")
+        let apiPesquisa = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&language=pt-BR&query=${id}`
+        let request = new XMLHttpRequest()
+        request.onload = () => {
+            let resultado = JSON.parse(request.response).results
+            resultado.forEach((element, index, array) => {
+                divPesquisa.innerHTML += `
+                    <a href="https://www.themoviedb.org/movie/${element.id}" class="cardPesquisa">
+                        <div class="cardPesquisaImagem">
+                            <img src="https://image.tmdb.org/t/p/original/${element.poster_path}" alt="">
+                        </div>
+                    </a>
+                `
+            });
+        }
+        request.open("GET", apiPesquisa, true)
+        request.send()
+
+    </script>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>

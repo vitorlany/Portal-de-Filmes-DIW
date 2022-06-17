@@ -73,3 +73,8 @@ function porVim() {
     }
     request.send()
 }
+
+function pesquisa() {
+    let pesquisa = document.getElementById("filme-pesquisa").value 
+    window.location.replace(`/pesquisa.html?id=${pesquisa}`)
+}

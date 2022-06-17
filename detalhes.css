@@ -1,5 +1,9 @@
 .img-detalhes {
-    width: 250px;
+    width: 500px;
+}
+
+p {
+    font-size: large;
 }
 
 .img-detalhes img {
