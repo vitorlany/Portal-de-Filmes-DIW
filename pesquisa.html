@@ -9,24 +9,42 @@
     <title>Document</title>
 
     <style>
-        .resultadoPesquisa {
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
+
+        #resultadoPesquisa{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
         }
 
         .cardPesquisa {
-            display: inline-block;
-            margin-bottom: 5px;
+          border-style: groove;
+          border-radius: 10px;
+          padding: 5px;
+          margin-bottom: 10px;
         }
 
-        .cardPesquisaImagem {
-            width: 250px;
+        .imagemPesquisa {
+          width: 250px;
+          margin: 0 auto;
+          display: inline-block;
         }
 
-        .cardPesquisaImagem img {
-            width: 100%;
+        .imagemPesquisa img {
+          max-width: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+        }
+
+        .informacoesPesquisa {
+          margin: 10px;
+          display: inline-block;
+          vertical-align: top;
+          width: 300px;
+        }
+
+        .botaoPesquisa {
+          vertical-align: bottom;
+          float: left;
         }
     </style>
 </head>
@@ -34,7 +52,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/index.html">
             <h5>MAIS+ FILMES</h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -65,11 +83,12 @@
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
 
     <div class="container">
         <div class="row">
             <div id="resultadoPesquisa">
+              
             </div>
         </div>
     </div>
@@ -86,17 +105,23 @@
             let resultado = JSON.parse(request.response).results
             resultado.forEach((element, index, array) => {
                 divPesquisa.innerHTML += `
-                    <a href="https://www.themoviedb.org/movie/${element.id}" class="cardPesquisa">
-                        <div class="cardPesquisaImagem">
-                            <img src="https://image.tmdb.org/t/p/original/${element.poster_path}" alt="">
-                        </div>
-                    </a>
+                <div class="cardPesquisa">
+                <div class="imagemPesquisa">
+                  <img src="https://image.tmdb.org/t/p/original/${element.poster_path}" alt="Imagem - ${element.title}">
+                </div>
+                <div class="informacoesPesquisa">
+                  <h2>${element.title}</h2>
+                  <span>${element.release_date}</span>
+                  <p>${element.overview}</p>
+                  <button onclick="window.location.href = 'https://www.themoviedb.org/movie/${element.id}'" class="btn btn-primary botaoPesquisa">Mostrar mais</button>
+                </div>
+              </div>
                 `
             });
         }
         request.open("GET", apiPesquisa, true)
         request.send()
-
+          
     </script>
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
