@@ -29,6 +29,14 @@
           display: inline-block;
         }
 
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 6;
+          -webkit-box-orient: vertical;
+        }
+
         .imagemPesquisa img {
           max-width: 100%;
           border-radius: 10px;
